@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta http-equiv="X-UA-Compatible" content="ie=edge">
+	<title>Document</title>
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+	<link href="https://fonts.googleapis.com/css?family=Roboto:300,400,500&display=swap&subset=cyrillic" rel="stylesheet">
+	<link rel="stylesheet" href="css/main.css">
+</head>
+<body>
+	<div class="content">        
+		<div class="container">
+			<div class="row">
+				<div class="col-lg-8 col-xl-9">
+					<div class="content__top">
+						<h1>
+							ApplePay — оплата на сайте
+						</h1>
+						<div class="lead">
+							При оплате не нужно вводить данные карты.
+							Платеж подтверждается по Touch ID.
+						</div>
+					</div>
+				</div>
+			</div>
+		<div class="main-card d-md-none">
+			<div class="main-card__inner">
+				<div>Ускорьте процесс оплаты для ваших клиентов</div>
+				<div class="main-card__button btn">
+					Подключиться
+				</div>
+			</div>
+		</div>
+		<div class="slider-cards__outer swiper-container">
+			<div class="slider-cards row swiper-wrapper">
+				<div class="slider-card__first col-md-4 col-lg-3 d-none d-md-block swiper-slide" id="tns1-item0" aria-hidden="false">
+					<div class="slider-card__inner">
+						<div>
+							Ускорьте процесс оплаты для ваших клиентов
+						</div>
+						<div class="slider-card__button btn">
+							Подключиться
+						</div>
+					</div>
+				</div>
+				<div class="slider-card col-md-4 col-lg-3 tns-item swiper-slide" id="tns1-item1" aria-hidden="true" tabindex="-1">
+					<div class="slider-card__inner">
+						<div class="slider-card__icon">
+							<img src="data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iNjAiIGhlaWdodD0iNjAiIHZpZXdCb3g9IjAgMCA2MCA2MCIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIiB4bWxuczp4bGluaz0iaHR0cDovL3d3dy53My5vcmcvMTk5OS94bGluayI+PGRlZnM+PHBhdGggaWQ9ImEiIGQ9Ik04LjA1NDIgMC4yNDI2NjY2NjdMMC41MDE2IDcuNzgxODAzOTIgNC4yNzc5IDExLjU1MjQ3MDYgMTkuMzg0MiAxMS41NTI0NzA2eiIvPjxsaW5lYXJHcmFkaWVudCB4MT0iLjAwMiUiIHkxPSI0OS45OTclIiB4Mj0iOTkuOTk3JSIgeTI9IjQ5Ljk5NyUiIGlkPSJiIj48c3RvcCBzdG9wLWNvbG9yPSIjMzg2MEZGIiBvZmZzZXQ9IjAlIi8+PHN0b3Agc3RvcC1jb2xvcj0iIzY0MTJEMSIgb2Zmc2V0PSIxMDAlIi8+PC9saW5lYXJHcmFkaWVudD48cGF0aCBpZD0iZCIgZD0iTTAuNDk1IDMuMjk0MTE3NjVMNi4zNTY5IDMuMjk0MTE3NjUgMy40MjU0IDEuMDIxMTc2NDd6Ii8+PGxpbmVhckdyYWRpZW50IHgxPSItLjAwNSUiIHkxPSI0OS45OTklIiB4Mj0iOTkuOTk1JSIgeTI9IjQ5Ljk5OSUiIGlkPSJlIj48c3RvcCBzdG9wLWNvbG9yPSIjMzg2MEZGIiBvZmZzZXQ9IjAlIi8+PHN0b3Agc3RvcC1jb2xvcj0iIzY0MTJEMSIgb2Zmc2V0PSIxMDAlIi8+PC9saW5lYXJHcmFkaWVudD48L2RlZnM+PGcgZmlsbD0ibm9uZSIgZmlsbC1ydWxlPSJldmVub2RkIj48cGF0aCBmaWxsPSIjQkQ2REZGIiBkPSJNMjMuNjAxNzEgOC42MzczOTYwOEwxOS44MjU0MSA0Ljg2NzgyNzQ1IDEyLjI3MjgxIDEyLjQwNjk2NDcgMjcuMzc4MDEgMTIuNDA2OTY0N3oiIHRyYW5zZm9ybT0idHJhbnNsYXRlKDMgMikiLz48ZyB0cmFuc2Zvcm09InRyYW5zbGF0ZSgyNi4xIDIuODU1KSI+PG1hc2sgaWQ9ImMiIGZpbGw9IiNmZmYiPjx1c2UgeGxpbms6aHJlZj0iI2EiLz48L21hc2s+PHBhdGggZmlsbD0idXJsKCNiKSIgbWFzaz0idXJsKCNjKSIgZD0iTTguMDU0MiAwLjI0MjY2NjY2N0wwLjUwMTYgNy43ODE4MDM5MiA0LjI3NzkgMTEuNTUyNDcwNiAxOS4zODQyIDExLjU1MjQ3MDZ6Ii8+PC9nPjxwYXRoIGZpbGw9IiMyQjE5QzIiIGQ9Ik00Mi40ODM4NyAxMi40MDYzMDU5TDI3LjM3ODY3IDEyLjQwNjMwNTkgNi42MDg0NyAxMi40MDYzMDU5IC0wLjAwMDMzIDU1Ljc1Njg5NDEgNTQuNzU2NTcgNTUuNzU2ODk0MSA0OC4xNDc3NyAxMi40MDYzMDU5eiIgdHJhbnNmb3JtPSJ0cmFuc2xhdGUoMyAyKSIvPjxwYXRoIGQ9Ik0yNi4xNTQwNCwxMC43NDQ5NzI1IEMyNS42NTkwNCwxMC43NDQ5NzI1IDI1LjI1ODY0LDEwLjM0NTI4NjMgMjUuMjU4NjQsOS44NTExNjg2MyBDMjUuMjU4NjQsOS4zNTcwNTA5OCAyNS42NTkwNCw4Ljk1NjI2NjY3IDI2LjE1NDA0LDguOTU2MjY2NjcgQzI2LjY0OTA0LDguOTU2MjY2NjcgMjcuMDUwNTQsOS4zNTcwNTA5OCAyNy4wNTA1NCw5Ljg1MTE2ODYzIEMyNy4wNTA1NCwxMC4zNDUyODYzIDI2LjY0OTA0LDEwLjc0NDk3MjUgMjYuMTU0MDQsMTAuNzQ0OTcyNSBNMi44NjA0NCw4Ljk1NjI2NjY3IEMzLjM1NTQ0LDguOTU2MjY2NjcgMy43NTY5NCw5LjM1NzA1MDk4IDMuNzU2OTQsOS44NTExNjg2MyBDMy43NTY5NCwxMC4zNDUyODYzIDMuMzU1NDQsMTAuNzQ0OTcyNSAyLjg2MDQ0LDEwLjc0NDk3MjUgQzIuMzY2NTQsMTAuNzQ0OTcyNSAxLjk2NTA0LDEwLjM0NTI4NjMgMS45NjUwNCw5Ljg1MTE2ODYzIEMxLjk2NTA0LDkuMzU3MDUwOTggMi4zNjY1NCw4Ljk1NjI2NjY3IDIuODYwNDQsOC45NTYyNjY2NyBNMjguODQxMzQsOS44NTExNjg2MyBDMjguODQxMzQsOC4zNjg4MTU2OSAyNy42MzkwNCw3LjE2NzU2MDc4IDI2LjE1NDA0LDcuMTY3NTYwNzggQzI0LjY3MDE0LDcuMTY3NTYwNzggMjMuNDY2NzQsOC4zNjg4MTU2OSAyMy40NjY3NCw5Ljg1MTE2ODYzIEMyMy40NjY3NCwxMC45MTA3NzY1IDI0LjA4ODI0LDExLjgxODg1NDkgMjQuOTgyNTQsMTIuMjU0Nzc2NSBDMjMuODc3MDQsMTcuMTAxNTIxNiAxOS41NTUxNCwyMC42MDIwNzA2IDE0LjUwNzI0LDIwLjYwMjA3MDYgQzkuNDU5MzQsMjAuNjAyMDcwNiA1LjEzODU0LDE3LjEwMTUyMTYgNC4wMzMwNCwxMi4yNTQ3NzY1IEM0LjkyNzM0LDExLjgxODg1NDkgNS41NDg4NCwxMC45MTA3NzY1IDUuNTQ4ODQsOS44NTExNjg2MyBDNS41NDg4NCw4LjM2ODgxNTY5IDQuMzQ0MzQsNy4xNjc1NjA3OCAyLjg2MDQ0LDcuMTY3NTYwNzggQzEuMzc2NTQsNy4xNjc1NjA3OCAwLjE3MzE0LDguMzY4ODE1NjkgMC4xNzMxNCw5Ljg1MTE2ODYzIEMwLjE3MzE0LDExLjEyMDUwMiAxLjA1OTc0LDEyLjE3NzkxMzcgMi4yNDY2NCwxMi40NTY4MTU3IEMzLjQ0NDU0LDE4LjIyMDQyMzUgOC41NDYzNCwyMi40MDI4NTQ5IDE0LjUwNzI0LDIyLjM3MTAxMTggQzIwLjQ2OTI0LDIyLjQwMjg1NDkgMjUuNTY5OTQsMTguMjIwNDIzNSAyNi43Njg5NCwxMi40NTY4MTU3IEMyNy45NTU4NCwxMi4xNzc5MTM3IDI4Ljg0MTM0LDExLjEyMDUwMiAyOC44NDEzNCw5Ljg1MTE2ODYzIiBmaWxsPSIjMTFGMjhDIiB0cmFuc2Zvcm09InRyYW5zbGF0ZSgxNS4xIDEzLjgzNikiLz48cGF0aCBmaWxsPSIjQkQ2REZGIiBkPSJNMzYuMDQ4MSAwLjU3MDg3MDU4OEw0Mi42NTY5IDQzLjkyMTQ1ODggMzYuNzk1IDQzLjkyMTQ1ODh6IiB0cmFuc2Zvcm09InRyYW5zbGF0ZSgxNS4xIDEzLjgzNikiLz48ZyB0cmFuc2Zvcm09InRyYW5zbGF0ZSg1MS40IDU0LjQ2MykiPjxtYXNrIGlkPSJmIiBmaWxsPSIjZmZmIj48dXNlIHhsaW5rOmhyZWY9IiNkIi8+PC9tYXNrPjxwYXRoIGZpbGw9InVybCgjZSkiIG1hc2s9InVybCgjZikiIGQ9Ik0wLjQ5NSAzLjI5NDExNzY1TDYuMzU2OSAzLjI5NDExNzY1IDMuNDI1NCAxLjAyMTE3NjQ3eiIvPjwvZz48L2c+PC9zdmc+" alt="Значок интернет-магазина" title="Иконка покупок в интернет-магазине" class="loaded tns-complete">
+						</div>
+						<div class="slider-card__title">Интернет-магазин</div>
+						<div>
+							Покупатель собирает заказ и выбирает оплату через Apple
+							Pay.
+						</div>
+					</div>
+				</div>
+				<div class="slider-card col-md-4 col-lg-3 tns-item swiper-slide" id="tns1-item2" aria-hidden="true" tabindex="-1">
+					<div class="slider-card__inner">
+						<div class="slider-card__icon">
+							<img src="data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iNjAiIGhlaWdodD0iNjAiIHZpZXdCb3g9IjAgMCA2MCA2MCIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIiB4bWxuczp4bGluaz0iaHR0cDovL3d3dy53My5vcmcvMTk5OS94bGluayI+PGRlZnM+PHBhdGggaWQ9ImEiIGQ9Ik0wIDBoNTd2NTdIMHoiLz48L2RlZnM+PGcgZmlsbD0ibm9uZSIgZmlsbC1ydWxlPSJldmVub2RkIj48ZyB0cmFuc2Zvcm09InRyYW5zbGF0ZSgxIDIpIj48bWFzayBpZD0iYiIgZmlsbD0iI2ZmZiI+PHVzZSB4bGluazpocmVmPSIjYSIvPjwvbWFzaz48cGF0aCBkPSJNNTcgMjguNUM1NyAxMi43NiA0NC4yNCAwIDI4LjUgMFMwIDEyLjc2IDAgMjguNSAxMi43NiA1NyAyOC41IDU3IDU3IDQ0LjI0IDU3IDI4LjUiIGZpbGw9IiMyQjE5QzIiIG1hc2s9InVybCgjYikiLz48L2c+PHBhdGggZD0iTTMxLjkwMSAzNC42OTR2LTIuODJhMi4wMTkgMi4wMTkgMCAwIDAtMi4wMTctMi4wMTcgMi4wMTkgMi4wMTkgMCAwIDAtMi4wMTcgMi4wMTd2Mi41NDZjMCAzLjA2OS0xLjEzIDYuMDE1LTMuMTgzIDguMjk2bC0yLjgzIDMuMTQ1YS42NDQuNjQ0IDAgMSAwIC45NTYuODZsMi44MzEtMy4xNDNhMTMuNjc2IDEzLjY3NiAwIDAgMCAzLjUxMy05LjE1OHYtMi41NDZhLjczLjczIDAgMCAxIDEuNDU5IDB2Mi44MmMwIDMuNzc2LTEuMzk5IDcuMzk2LTMuOTM5IDEwLjE4OWwtMi43NTkgMy4wMzZhLjY0NC42NDQgMCAwIDAgLjk1Mi44NjZsMi43Ni0zLjAzNWExNi40MDUgMTYuNDA1IDAgMCAwIDQuMjc0LTExLjA1NiIgZmlsbD0iI0ZGRiIvPjxwYXRoIGQ9Ik0zNC42NDcgMzEuODczYTQuNzY5IDQuNzY5IDAgMCAwLTQuNzYzLTQuNzY0IDQuNzY4IDQuNzY4IDAgMCAwLTQuNzYzIDQuNzY0djIuNTQ2YTkuNjQgOS42NCAwIDAgMS0yLjQ3OSA2LjQ2bC0yLjAxMiAyLjIzNWEuNjQ0LjY0NCAwIDAgMCAuOTU3Ljg2MkwyMy42IDQxLjc0YTEwLjkyIDEwLjkyIDAgMCAwIDIuODEtNy4zMnYtMi41NDZhMy40OCAzLjQ4IDAgMCAxIDMuNDc1LTMuNDc3IDMuNDggMy40OCAwIDAgMSAzLjQ3NiAzLjQ3N3YyLjgyYzAgNC40NjEtMS42NTMgOC43MzctNC42NTQgMTIuMDM3bC0yLjMyOCAyLjU2MWEuNjQ0LjY0NCAwIDAgMCAuOTUzLjg2NmwyLjMyOC0yLjU2YTE5LjE0MyAxOS4xNDMgMCAwIDAgNC45ODgtMTIuOTA0di0yLjgyeiIgZmlsbD0iIzExRjI4QyIvPjxwYXRoIGQ9Ik0zNy4zOTQgMzEuODczYzAtNC4xNC0zLjM3LTcuNTEtNy41MS03LjUxcy03LjUxIDMuMzctNy41MSA3LjUxdjIuNTQ2YzAgMS43MS0uNjMgMy4zNTEtMS43NzMgNC42MjJsLTEuODEyIDIuMDE0YS42NDQuNjQ0IDAgMCAwIC45NTcuODYxbDEuODEyLTIuMDE0YTguMTg0IDguMTg0IDAgMCAwIDIuMTA0LTUuNDgzdi0yLjU0NmE2LjIzIDYuMjMgMCAwIDEgNi4yMjItNi4yMjMgNi4yMjkgNi4yMjkgMCAwIDEgNi4yMjIgNi4yMjN2Mi44MmEyMC42MDIgMjAuNjAyIDAgMCAxLTUuMzY3IDEzLjg4NWwtLjY0NC43MDhhLjY0My42NDMgMCAxIDAgLjk1Mi44NjZsLjY0NC0uNzA5YTIxLjg4IDIxLjg4IDAgMCAwIDUuNzAzLTE0Ljc1di0yLjgyeiIgZmlsbD0iIzExRjI4QyIvPjxwYXRoIGQ9Ik0xOS42MjggMzEuODczYS42NDQuNjQ0IDAgMCAwIDEuMjg3IDBjMC0yLjE2OC43ODctNC4yNjIgMi4yMTYtNS44OTZhOC45NzMgOC45NzMgMCAwIDEgNS40NzEtMi45ODIuNjQzLjY0MyAwIDEgMC0uMTgzLTEuMjczIDEwLjI1MyAxMC4yNTMgMCAwIDAtNi4yNTcgMy40MDggMTAuMjQ0IDEwLjI0NCAwIDAgMC0yLjUzNCA2Ljc0MyIgZmlsbD0iIzExRjI4QyIvPjxwYXRoIGQ9Ik0yMC45MTUgMzQuNDJhLjY0NC42NDQgMCAwIDAtMS4yODcgMGMwIDEuMDMtLjM4IDIuMDItMS4wNjggMi43ODRsLTEuNjEyIDEuNzkxYS42NDIuNjQyIDAgMCAwIC40NzggMS4wNzQuNjQ0LjY0NCAwIDAgMCAuNDgtLjIxM2wxLjYxMS0xLjc5YTUuNDQ1IDUuNDQ1IDAgMCAwIDEuMzk4LTMuNjQ3IiBmaWxsPSIjQkQ2REZGIi8+PHBhdGggZD0iTTM4Ljg3NyA0MC4xNjVhLjY0NS42NDUgMCAwIDAtLjc4Ni40NiAyMy4xNjggMjMuMTY4IDAgMCAxLS44OCAyLjY4My42NDUuNjQ1IDAgMCAwIDEuMTk4LjQ3NGMuMzY1LS45Mi42NzctMS44NzMuOTI4LTIuODNhLjY0NS42NDUgMCAwIDAtLjQ2LS43ODciIGZpbGw9IiMxMUYyOEMiLz48cGF0aCBkPSJNMzYuNzM0IDI0LjI0NmEuNjQ0LjY0NCAwIDAgMC0uODYuOTU3IDguOTgzIDguOTgzIDAgMCAxIDIuOTggNi42N3YyLjgyYzAgMS4wNzEtLjA3NSAyLjE1LS4yMiAzLjIwNmEuNjQ0LjY0NCAwIDAgMCAxLjI3NC4xNzZjLjE1NC0xLjExNS4yMzItMi4yNTMuMjMyLTMuMzgydi0yLjgyYTEwLjI3IDEwLjI3IDAgMCAwLTMuNDA2LTcuNjI3IiBmaWxsPSIjRkZGIi8+PHBhdGggZD0iTTMzLjcyNSAyMy43NjlhLjY0My42NDMgMCAwIDAgLjU1NC0xLjE2MiAxMC4xNiAxMC4xNiAwIDAgMC0yLjkzLS44ODUuNjQzLjY0MyAwIDEgMC0uMTgzIDEuMjc0IDguODU3IDguODU3IDAgMCAxIDIuNTU5Ljc3MyIgZmlsbD0iIzExRjI4QyIvPjxwYXRoIGQ9Ik0yOS44ODQgMTguODdjLS4yNDEgMC0uNDg0LjAwOC0uNzI0LjAyMWEuNjQyLjY0MiAwIDAgMC0uNjA3LjY3OC42NDIuNjQyIDAgMCAwIC42NzguNjA4Yy4yMTYtLjAxMi40MzYtLjAxOC42NTMtLjAxOCA2LjQ1OSAwIDExLjcxNSA1LjI1NSAxMS43MTUgMTEuNzE1djIuODJhLjY0NC42NDQgMCAxIDAgMS4yODcgMHYtMi44MmMwLTcuMTctNS44MzMtMTMuMDAzLTEzLjAwMi0xMy4wMDMiIGZpbGw9IiMxMUYyOEMiLz48cGF0aCBkPSJNMjIuODQ2IDIyLjM2NGEuNjUuNjUgMCAwIDAgLjM2Ny0uMTE1IDExLjY1MiAxMS42NTIgMCAwIDEgMy40OTYtMS42NTQuNjQ0LjY0NCAwIDEgMC0uMzUtMS4yNCAxMi45NTcgMTIuOTU3IDAgMCAwLTMuODggMS44MzYuNjQ1LjY0NSAwIDAgMCAuMzY3IDEuMTczIiBmaWxsPSIjM0M1QUZCIi8+PHBhdGggZD0iTTE4LjE3IDM0LjQydi0yLjU0N2MwLTIuOTk0IDEuMTMzLTUuODQ3IDMuMTkyLTguMDNhLjY0NC42NDQgMCAxIDAtLjkzNy0uODgzIDEyLjk0OCAxMi45NDggMCAwIDAtMy41NDQgOC45MTN2Mi41NDZjMCAuMzUxLS4xMjkuNjg3LS4zNjMuOTQ3bC0uNzkzLjg4MmEuNjQzLjY0MyAwIDEgMCAuOTU2Ljg2MWwuNzk0LS44OGMuNDQ3LS40OTguNjk0LTEuMTQuNjk0LTEuODEiIGZpbGw9IiMxMUYyOEMiLz48cGF0aCBkPSJNNDQuODE1IDI2Ljg2MmExNS42NjMgMTUuNjYzIDAgMCAwLTMuMzM0LTUuNjM0LjY0NS42NDUgMCAwIDAtLjk0OS44NyAxNC4zNjMgMTQuMzYzIDAgMCAxIDMuMDYzIDUuMTc0LjY0NS42NDUgMCAwIDAgLjgxNi40MDUuNjQzLjY0MyAwIDAgMCAuNDA0LS44MTUiIGZpbGw9IiNCRDZERkYiLz48cGF0aCBkPSJNMzQuOTcgMTYuOTY3YS42NDMuNjQzIDAgMCAwLS40MTYgMS4yMTggMTQuNDAyIDE0LjQwMiAwIDAgMSAzLjk2IDIuMDkyLjY0NS42NDUgMCAxIDAgLjc3LTEuMDMyIDE1LjcxMyAxNS43MTMgMCAwIDAtNC4zMTMtMi4yNzhNMTkuODgzIDIxLjQzOGExNC4zODYgMTQuMzg2IDAgMCAxIDEwLTQuMDI2Yy42OTUgMCAxLjM5NS4wNSAyLjA3OC4xNDhhLjY0Mi42NDIgMCAxIDAgLjE4My0xLjI3MyAxNS43ODQgMTUuNzg0IDAgMCAwLTIuMjYtLjE2MiAxNS42NyAxNS42NyAwIDAgMC0xMC44OTMgNC4zODMgMTUuNjc2IDE1LjY3NiAwIDAgMC00Ljg0IDEwLjY1LjY0NC42NDQgMCAwIDAgLjYxNC42NzJoLjAzYy4zNDIgMCAuNjI3LS4yNy42NDItLjYxNGExNC4zOTIgMTQuMzkyIDAgMCAxIDQuNDQ1LTkuNzc4IiBmaWxsPSIjMTFGMjhDIi8+PHBhdGggZD0iTTI5Ljg4NCAxMy4zNzhjLTEuNDM5IDAtMi44NzQuMTY3LTQuMjYzLjQ5NmEuNjQzLjY0MyAwIDEgMCAuMjk3IDEuMjUyIDE3LjIzNCAxNy4yMzQgMCAwIDEgMy45NjYtLjQ2YzQuNzIgMCA5LjEyNiAxLjg4IDEyLjQwNiA1LjI5NGEuNjQuNjQgMCAwIDAgLjkxLjAxOS42NDQuNjQ0IDAgMCAwIC4wMTgtLjkxIDE4LjQ2OSAxOC40NjkgMCAwIDAtNS45NjYtNC4xNiAxOC4zMyAxOC4zMyAwIDAgMC03LjM2OC0xLjUzIiBmaWxsPSIjMTFGMjhDIi8+PHBhdGggZD0iTTE1LjQyNSAyMS4zOTVhLjY0MS42NDEgMCAwIDAgLjkwMy0uMTEgMTcuMzI0IDE3LjMyNCAwIDAgMSA2Ljk4Ni01LjMxNi42NDQuNjQ0IDAgMCAwLS40OTQtMS4xOSAxOC42MTQgMTguNjE0IDAgMCAwLTcuNTA1IDUuNzEyLjY0NC42NDQgMCAwIDAgLjExLjkwNCIgZmlsbD0iI0JENkRGRiIvPjxwYXRoIGQ9Ik0yMC45NiAxMy45NTVhLjY0Ni42NDYgMCAwIDAgLjI3OC0uMDY0IDE5LjcxOCAxOS43MTggMCAwIDEgOC42NDYtMS45NzJjMS41NzcgMCAzLjE0OC4xODUgNC42Ny41NTFhLjY0My42NDMgMCAxIDAgLjMtMS4yNSAyMS4yNDUgMjEuMjQ1IDAgMCAwLTQuOTctLjU4OWMtMy4yMjIgMC02LjMyLjcwNy05LjIwNSAyLjFhLjY0My42NDMgMCAwIDAgLjI4IDEuMjI0IiBmaWxsPSIjMTFGMjhDIi8+PHBhdGggZD0iTTM3LjI0MyAxMy4zMjVjLjY2NC4yNjQgMS4zMi41NjggMS45NTIuOTAyYS42NC42NCAwIDAgMCAuODctLjI2Ny42NDMuNjQzIDAgMCAwLS4yNjctLjg3IDIxLjAyIDIxLjAyIDAgMCAwLTIuMDc5LS45Ni42NDMuNjQzIDAgMSAwLS40NzYgMS4xOTUiIGZpbGw9IiMzQzVBRkIiLz48L2c+PC9zdmc+" alt="Значок подтверждения с помощью отпечатка пальца" title="Иконка биометрической идентификации" class="loaded tns-complete">
+						</div>
+						<div class="slider-card__title">Подтверждение</div>
+						<div>
+							Проверяет данные и подтверждает покупку с помощью
+							отпечатка пальца.
+						</div>
+					</div>
+				</div>
+				<div class="slider-card col-md-4 col-lg-3 tns-item swiper-slide" id="tns1-item3" aria-hidden="true" tabindex="-1">
+					<div class="slider-card__inner">
+						<div class="slider-card__icon">
+							<img src="data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iNjAiIGhlaWdodD0iNjAiIHZpZXdCb3g9IjAgMCA2MCA2MCIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj48ZyB0cmFuc2Zvcm09InRyYW5zbGF0ZSgyIDQpIiBmaWxsLXJ1bGU9Im5vbnplcm8iIGZpbGw9Im5vbmUiPjxyZWN0IGZpbGw9IiMyQjE5QzIiIHdpZHRoPSIzNC40NjQiIGhlaWdodD0iNTMuMSIgcng9IjQuNjk3Ii8+PHBhdGggZD0iTTM0LjQ2NCA0LjQ2OHY0NC4xNzRjLTEyLjE2IDAtMjIuMDE5LTkuODg4LTIyLjAxOS0yMi4wODcgMC0xMi4xOTggOS44NTgtMjIuMDg3IDIyLjAxOS0yMi4wODd6IiBmaWxsPSIjMTFGMjhDIiBvcGFjaXR5PSIuOCIvPjxwYXRoIGQ9Ik00OS4yNTIgMTAuMTk2QTIxLjgzNCAyMS44MzQgMCAwIDAgMzQuNDc0IDQuNDl2NDQuMTIyYzkuMS4wMTIgMTcuMjY4LTUuNiAyMC41NDQtMTQuMTE1IDMuMjc2LTguNTE3Ljk4NC0xOC4xNzctNS43NjYtMjQuM3oiIGZpbGw9IiMxMUYyOEMiLz48ZWxsaXBzZSBmaWxsPSIjRkZGIiBjeD0iMTcuMjI3IiBjeT0iNDguNzQ4IiByeD0iMi44MTgiIHJ5PSIyLjgyNyIvPjxwYXRoIGQ9Ik0zNi4yNTggMjQuMzUzaC0zLjZhMi4zMTYgMi4zMTYgMCAwIDEtMi4xNTUtMi4zMTRjMC0xLjIyLjk0My0yLjIzIDIuMTU2LTIuMzEzaDYuMzMzYy45MDQgMCAxLjYzNi0uNzM1IDEuNjM2LTEuNjQxIDAtLjkwNy0uNzMyLTEuNjQxLTEuNjM2LTEuNjQxSDM2LjF2LTIuMTE4YzAtLjkwNy0uNzMzLTEuNjQxLTEuNjM2LTEuNjQxLS45MDQgMC0xLjYzNi43MzQtMS42MzYgMS42NHYyLjExOWgtLjE3YTUuNTggNS41OCAwIDAgMC01LjAzNyAyLjcyNSA1LjYxNiA1LjYxNiAwIDAgMCAwIDUuNzQxIDUuNTggNS41OCAwIDAgMCA1LjAzOCAyLjcyNWgzLjZhMi4zMSAyLjMxIDAgMCAxIDIuMTMgMS4xMWMuNDUuNzQuNDUgMS42NjggMCAyLjQwOGEyLjMxIDIuMzEgMCAwIDEtMi4xMyAxLjExaC02LjQ2Yy0uOTA0IDAtMS42MzcuNzM0LTEuNjM3IDEuNjQgMCAuOTA3LjczMyAxLjY0MiAxLjYzNiAxLjY0MmgzLjAzdjIuMThjMCAuOTA3LjczMiAxLjY0MiAxLjYzNiAxLjY0Mi45MDMgMCAxLjYzNi0uNzM1IDEuNjM2LTEuNjQxdi0yLjIwMmguMjMyYTUuNTk0IDUuNTk0IDAgMCAwIDUuMTI4LTUuNjIgNS41OTQgNS41OTQgMCAwIDAtNS4yMDItNS41NTF6IiBmaWxsPSIjQkQ2REZGIi8+PC9nPjwvc3ZnPg==" alt="Значок оплаты c телефона" title="оплата с телефона" class="loaded tns-complete">
+						</div>
+						<div class="slider-card__title">Оплата</div>
+						<div>
+							Деньги списываются с банковской карты из Apple
+							Wallet.
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="Wrapper__Wrapper">
+			<div class="row">
+				<h2 class="MobilePay_Main__Title title--h1 col-md-8 col-lg-6">
+					Принимайте Apple Pay c RBK.money
+				</h2>
+			</div>
+			<div class="row">
+				<div class="col-md-6">
+					<div class="MobilePay_Main__Item">
+						<div class="title--h2">Быстрое подключение</div>
+						<div>
+							Для подключения Apple Pay вам достаточно только интеграции
+							с RBK.money. Нашим клиентам сервис доступен
+							по умолчанию.
+						</div>
+					</div>
+					<div class="MobilePay_Main__Item">
+						<div class="title--h2">Платежи по всему миру</div>
+						<div>
+							Работаем с резидентами и нерезидентами,
+							осуществляем мультивалютные и трансграничные платежи.
+						</div>
+					</div>
+					<div class="MobilePay_Main__Item">
+						<div class="title--h2">Единая интеграция</div>
+						<div>
+							Все популярные способы оплаты за одно подключение.
+						</div>
+					</div>
+				</div>
+				<div class="col-md-6 d-none d-md-block">
+					<div class="MobilePay_Main__PhoneWrapper MobilePay_views_ApplePay__PhoneWrapper">
+						<div class="MobilePay_Main__Phone">
+							<img src="img/phone.png" alt="Оплата на сайте через ApplePay" title="Телефон с услугой Apple pay">
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="MobilePay_SupportWrapper__Wrapper">
+			<div class="row">
+				<div class="col-md-9 col-lg-8">
+					<h2 class="MobilePay_SupportWrapper__Title title--h1">
+						Какие устройства поддерживают Apple Pay
+					</h2>
+				</div>
+			</div>
+			<div class="row">
+				<div class="MobilePay_views_ApplePay__Item col-md-6 col-lg-3">
+					<div class="MobilePay_views_ApplePay__Title">Mac</div>
+					<div>
+						<p>MacBook Pro с датчиком Touch ID</p>
+						<p>
+							Компьютер Mac модели 2012 г. или более поздней
+							в сочетании с iPhone с поддержкой Apple Pay
+							или Apple Watch
+						</p>
+					</div>
+				</div>
+				<div class="MobilePay_views_ApplePay__Item col-md-6 col-lg-3">
+					<div class="MobilePay_views_ApplePay__Title">iPhone</div>
+					<div>
+						iPhone 11 Pro Max, iPhone 11 Pro, iPhone 11, iPhone XR, iPhone XS Max, iPhone XS, iPhone X, iPhone 8 Plus, iPhone 8, iPhone
+						7 Plus, iPhone 7, iPhone 6s Plus,
+						iPhone 6s, iPhone 6 Plus, iPhone 6,
+						iPhone 5s
+					</div>
+				</div>
+				<div class="MobilePay_views_ApplePay__Item col-md-6 col-lg-3">
+					<div class="MobilePay_views_ApplePay__Title">iPad</div>
+					<div>
+						iPad (7-го поколения), iPad (6-го поколения), iPad Air 2, iPad Pro, iPad
+						mini 4, iPad (5-го поколения), iPad mini 3
+					</div>
+				</div>
+				<div class="MobilePay_views_ApplePay__Item col-md-6 col-lg-3">
+					<div class="MobilePay_views_ApplePay__Title">Apple Watch</div>
+					<div>
+						Apple Watch Series 5, Apple Watch Series 4, Apple Watch Series 3, Apple Watch Series 2, Apple
+						Watch Series 1, Apple Watch (1-го поколения)
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="PaymentSolutions_Industry__Item">
+			<div class="PaymentSolutions_Industry__Icon"> <img src="data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMzYiIGhlaWdodD0iMjgiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgeG1sbnM6eGxpbms9Imh0dHA6Ly93d3cudzMub3JnLzE5OTkveGxpbmsiPjxkZWZzPjxwYXRoIGQ9Ik0yMCAyMjEzLjg1MmMwLS45MDEuNzMtMS42MzIgMS42MzItMS42MzJoMjguMDQ2Yy45MDEgMCAxLjYzMi43MyAxLjYzMiAxLjYzMnYyMC42NjZjMCAuOTAxLS43MyAxLjYzMi0xLjYzMiAxLjYzMkgyMS42MzJjLS45MDEgMC0xLjYzMi0uNzMtMS42MzItMS42MzJ6IiBpZD0iYSIvPjxwYXRoIGQ9Ik0yMS42MzIgMjIxMi4yMmgyOC4wNDRjLjkwMSAwIDEuNjMyLjczNSAxLjYzMiAxLjY0MXYyLjc1OEgyMHYtMi43NThjMC0uOTA2LjczLTEuNjQxIDEuNjMyLTEuNjQxeiIgaWQ9ImIiLz48cGF0aCBkPSJNMjIuMyAyMjE0LjQxNWMwLS41NS40NDMtLjk5NS45OS0uOTk1LjU0NyAwIC45OS40NDUuOTkuOTk1cy0uNDQzLjk5NS0uOTkuOTk1YS45OTIuOTkyIDAgMCAxLS45OS0uOTk1eiIgaWQ9ImMiLz48cGF0aCBkPSJNMjUuMDUgMjIxNC40MTVjMC0uNTUuNDQzLS45OTUuOTktLjk5NS41NDcgMCAuOTkuNDQ1Ljk5Ljk5NXMtLjQ0My45OTUtLjk5Ljk5NWEuOTkyLjk5MiAwIDAgMS0uOTktLjk5NXoiIGlkPSJkIi8+PHBhdGggZD0iTTMwLjI0IDIyMjQuMTgyYzAtLjkwMS43My0xLjYzMiAxLjYzMi0xLjYzMmgyMS43NTZjLjkwMSAwIDEuNjMyLjczIDEuNjMyIDEuNjMydjE0LjI5NmMwIC45MDEtLjczIDEuNjMyLTEuNjMyIDEuNjMySDMxLjg3MmMtLjkwMSAwLTEuNjMyLS43My0xLjYzMi0xLjYzMnoiIGlkPSJlIi8+PHBhdGggZD0iTTMxLjg4IDIyMjIuNTU1aDE5LjQ1NnYxMS45NTRjMCAuOTA3LS43MzEgMS42NDItMS42MzMgMS42NDJIMzAuMjQydi0xMS45NTVjMC0uNDM2LjE3My0uODU0LjQ4LTEuMTYyLjMwOC0uMzA4LjcyNS0uNDggMS4xNTktLjQ3OXoiIGlkPSJmIi8+PHBhdGggZD0iTTMwLjI0IDIyMjkuNTF2LTMuNDhoMjEuMDl2My40OHoiIGlkPSJoIi8+PHBhdGggZD0iTTUxLjMzIDIyMjkuNTF2LTMuNDdoMy45M3YzLjQ3eiIgaWQ9ImkiLz48cGF0aCBkPSJNMzMuNTYgMjIzMi44MzVjMC0uNDQuMzU2LS43OTUuNzk1LS43OTVoMi45M2MuNDQgMCAuNzk1LjM1Ni43OTUuNzk1di4wMWMwIC40NC0uMzU2Ljc5NS0uNzk1Ljc5NWgtMi45M2EuNzk1Ljc5NSAwIDAgMS0uNzk1LS43OTV6IiBpZD0iaiIvPjxsaW5lYXJHcmFkaWVudCBpZD0iZyIgZ3JhZGllbnRVbml0cz0idXNlclNwYWNlT25Vc2UiIHgxPSIzMC4yNCIgeTE9IjIyMjkuMzQyIiB4Mj0iNTEuMzMiIHkyPSIyMjI5LjM0MiI+PHN0b3Agc3RvcC1jb2xvcj0iIzM4NjBmZiIgb2Zmc2V0PSIwIi8+PHN0b3Agc3RvcC1jb2xvcj0iIzY1MTNkMSIgb2Zmc2V0PSIxIi8+PC9saW5lYXJHcmFkaWVudD48L2RlZnM+PGcgdHJhbnNmb3JtPSJ0cmFuc2xhdGUoLTIwIC0yMjEyKSI+PHVzZSB4bGluazpocmVmPSIjYSIgZmlsbD0iIzJiMTljMiIvPjx1c2UgeGxpbms6aHJlZj0iI2IiIGZpbGw9IiMzYzVhZmIiLz48dXNlIHhsaW5rOmhyZWY9IiNjIiBmaWxsPSIjZmZmIi8+PHVzZSB4bGluazpocmVmPSIjZCIgZmlsbD0iI2ZmZiIvPjx1c2UgeGxpbms6aHJlZj0iI2UiIGZpbGw9IiNiZDZkZmYiLz48Zz48dXNlIHhsaW5rOmhyZWY9IiNmIiBmaWxsPSJ1cmwoI2cpIi8+PC9nPjxnPjx1c2UgeGxpbms6aHJlZj0iI2giIGZpbGw9IiMxMWYyOGMiLz48L2c+PGcgb3BhY2l0eT0iLjgiPjxnIG9wYWNpdHk9Ii44Ij48dXNlIHhsaW5rOmhyZWY9IiNpIiBmaWxsPSIjMTFmMjhjIi8+PC9nPjwvZz48Zz48dXNlIHhsaW5rOmhyZWY9IiNqIiBmaWxsPSIjMTFmMjhjIi8+PC9nPjwvZz48L3N2Zz4=" alt="Значок интернет банкинга" title="Иконка интернет-банкинга"> </div>
+				<div>
+					<h3 class="title title--h3">Смотрите все методы оплаты</h3>
+					<div class="Pay_Methods__Link">
+						<a href="#" class="link-arrow link-arrow--right">Подробнее</a>
+				</div>
+			</div>
+	</div>
+	</div>
+
+</div>
+	<script src="https://unpkg.com/swiper/js/swiper.min.js"></script>
+	<script src="js/main.js"></script>
+</body>
+</html>

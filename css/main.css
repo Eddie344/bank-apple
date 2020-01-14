@@ -1,0 +1,560 @@
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+.content {
+	font-family: 'Roboto', sans-serif;
+	font-size: 18px;
+	min-width: 320px;
+	color: #29246a;
+	-webkit-font-smoothing: antialiased;
+	-moz-osx-font-smoothing: grayscale;
+	font-weight: 300;
+	padding-top: 60px;
+	overflow-x: hidden;
+}
+@media screen and (max-width: 767px) {
+	.container {
+    max-width: 480px;
+    padding-right: 20px;
+    padding-left: 20px;
+	}	
+}
+@media screen and (max-width: 1023px) and (min-width: 768px) {
+	.container {
+    max-width: 692px;
+	}
+}
+@media screen and (max-width: 1366px) and (min-width: 1024px) {
+	.container {
+    max-width: 930px;
+	}
+}
+@media screen and (min-width: 1367px) {
+	.container {
+    max-width: 1105px;
+	}
+}
+
+.btn {
+	display: inline-block;
+	border: 2px solid transparent;
+	border-radius: 28px;
+	cursor: pointer;
+	font: inherit;
+	font-weight: 400;
+	line-height: 44px;
+	outline: none;
+	text-align: center;
+	text-decoration: none;
+	transition: background-color .2s,color .2s,box-shadow .2s;
+}
+.content__top {
+	margin-bottom: 60px;
+}
+@media screen and (max-width: 767px) {
+	.content__top {
+    margin-bottom: 40px;
+	}
+}
+.content__top h1 {
+	margin-bottom: 24px;
+	font-size: 40px;
+	line-height: 48px;
+	font-weight: 500;
+  letter-spacing: -.4px;
+}
+@media screen and (max-width: 767px) {
+	.content__top h1 {
+    font-size: 34px;
+    line-height: 38px;
+	}
+}
+.content__top .lead {
+	font-size: 20px;
+	line-height: 32px;
+	max-width: 470px;
+}
+
+.main-card {
+	padding: 24px 24px 40px;
+	margin-bottom: 60px;
+	background-color: #695cff;
+	border-radius: 4px;
+	box-shadow: 0 10px 29px 0 rgba(92,141,255,.5);
+	color: #fff;
+	font-weight: 500;
+}
+.main-card__button {
+	width: calc(100% + 8px);
+	margin-top: 24px;
+	margin-left: -4px;
+	box-shadow: 0 10px 25px 0 rgba(65,54,181,.45);
+	background-color: #37cd8f;
+  color: #fff;
+}
+.main-card__button:hover {
+	background-color: #32bf85;
+  color: #fff;
+}
+
+.slider-cards {
+  position: relative;
+  flex-wrap: nowrap!important;
+}
+.slider-card__first, .slider-card {
+	color: #fff;
+	font-weight: 500;
+}
+.slider-card__first .slider-card__inner {
+	height: 100%;
+	background-color: #695cff;
+	border-radius: 4px;
+	box-shadow: 0 10px 29px 0 rgba(92,141,255,.5);
+}
+@media screen and (min-width: 1367px) {
+	.slider-card__first  .slider-card__inner {
+    padding: 32px 40px 0;
+	}
+}
+@media screen and (max-width: 1366px) and (min-width: 768px) {
+	.slider-card__first  .slider-card__inner {
+    padding: 24px 24px 0;
+    font-size: 14px;
+    line-height: 24px;
+	}
+}
+@media screen and (max-width: 1023px) {
+	.slider-card__first  .slider-card__inner {
+    padding-bottom: 32px;
+	}
+}
+.slider-card__button {
+	width: calc(100% + 8px);
+	margin-top: 24px;
+	margin-left: -4px;
+	padding: 0 33px;
+	line-height: 51px;
+	background-color: #37cd8f;
+	color: #fff;
+}
+.slider-card__button:hover {
+	box-shadow: 0 5px 15px 0 rgba(65,54,181,.45);
+	background-color: #2eb87e;
+  color: #fff;
+}
+.slider-card .slider-card__inner {
+	position: relative;
+	height: 100%;
+	padding-top: 1px;
+	background-color: #fff;
+	color: #29246a;
+	border-radius: 4px;
+	box-shadow: 0 10px 29px 0 rgba(92,141,255,.22);
+	font-weight: 300;
+}
+@media screen and (min-width: 1367px) {
+	.slider-card .slider-card__inner {
+    padding-right: 32px;
+    padding-bottom: 48px;
+    padding-left: 32px;
+	}
+}
+@media screen and (max-width: 1366px) {
+	.slider-card .slider-card__inner {
+    padding-right: 24px;
+    padding-left: 24px;
+    font-size: 14px;
+    line-height: 24px;
+	}
+}
+@media screen and (max-width: 1366px) and (min-width: 1024px) {
+	.slider-card .slider-card__inner {
+    padding-bottom: 40px;
+	}
+}
+@media screen and (max-width: 1023px) {
+	.slider-card .slider-card__inner {
+    padding-bottom: 32px;
+	}
+}
+@media screen and (max-width: 767px) {
+	.slider-card .slider-card__inner {
+    width: 212px!important;
+	}
+}
+.slider-card__icon {
+	margin-top: -20px;
+	margin-bottom: 16px;
+}
+.slider-card__title {
+	padding-right: 20px;
+	margin-bottom: 8px;
+	font-weight: 500;
+}
+.slider-card:not(:last-child)>.slider-card__inner:after, .slider-card:not(:last-child)>.slider-card__inner:before {
+	position: absolute;
+	content: "";
+}
+.slider-card:not(:last-child)>.slider-card__inner:before {
+	top: 53px;
+	right: -8px;
+	width: 31px;
+	height: 31px;
+	background-color: #fff;
+	border-radius: 3px;
+	box-shadow: 9px -9px 30px -5px rgba(92,141,255,.22);
+	-webkit-transform: rotate(45deg);
+	transform: rotate(45deg);
+}
+.slider-card:not(:last-child)>.slider-card__inner:after {
+	top: 58px;
+	right: -4px;
+	width: 45px;
+	height: 22px;
+	background: url(data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iNDUiIGhlaWdodD0iMjIiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+PHBhdGggZD0iTTQxLjM1NSA5LjgzbC03LjIwMy03LjIwM2EuOTg2Ljk4NiAwIDAgMS0uMDA3LTEuMzk1Ljk4Ni45ODYgMCAwIDEgMS4zOTUuMDA4bDkuMTE0IDkuMTE0YS45ODYuOTg2IDAgMCAxIC4wMDggMS4zOTVsLTkuMDIgOS4wMTlhLjk4Ni45ODYgMCAwIDEtMS4zOTQtLjAwOC45ODYuOTg2IDAgMCAxLS4wMDctMS4zOTRsNy41NzMtNy41NzRILjk4YS45ODEuOTgxIDAgMSAxIDAtMS45NjJoNDAuMzc0eiIgZmlsbD0iIzM4Q0Q4RiIvPjwvc3ZnPg==) 50%/contain no-repeat;
+}
+
+/* // */
+@media screen and (min-width: 1367px) {
+	.Wrapper__Wrapper {
+			margin: 128px 0;
+	}
+}
+@media screen and (max-width: 1366px) and (min-width: 1024px) {
+	.Wrapper__Wrapper {
+    margin: 96px 0;
+	}
+}
+@media screen and (max-width: 1023px) and (min-width: 768px) {
+	.Wrapper__Wrapper {
+    margin: 80px 0;
+	}
+}
+@media screen and (max-width: 767px) {
+	.Wrapper__Wrapper {
+			margin: 56px 0;
+	}
+}
+@media screen and (min-width: 1367px) {
+	.MobilePay_Main__Title.title--h1 {
+    margin-bottom: 40px;
+	}
+}
+@media screen and (max-width: 1366px) and (min-width: 768px) {
+	.MobilePay_Main__Title.title--h1 {
+    margin-bottom: 32px;
+	}	
+}
+@media screen and (max-width: 767px) {
+	.MobilePay_Main__Title.title--h1 {
+			margin-bottom: 24px;
+			margin-top: 25px;
+	}
+}
+@media screen and (min-width: 768px) {
+	.MobilePay_Main__Title:before {
+			position: absolute;
+			z-index: -1;
+			width: 238px;
+			height: 238px;
+			background-color: rgba(66,145,255,.05);
+			border-radius: 50%;
+			content: "";
+	}
+}
+@media screen and (min-width: 1367px) {
+	.MobilePay_Main__Title:before {
+			top: -62px;
+			left: -64px;
+	}
+}
+@media screen and (max-width: 1366px) and (min-width: 1024px) {
+	.MobilePay_Main__Title:before {
+			top: -70px;
+			left: -64px;
+	}
+}
+@media screen and (max-width: 1023px) and (min-width: 768px) {
+	.MobilePay_Main__Title:before {
+			top: -20px;
+			left: -67px;
+	}
+}
+@media screen and (min-width: 768px) {
+	.title--h1, h1:not([class]) {
+    font-size: 40px;
+    line-height: 48px;
+	}
+}
+@media screen and (min-width: 1367px) {
+	.title--h1, h1:not([class]) {
+    margin-bottom: 24px;
+    font-size: 48px;
+    line-height: 56px;
+	}
+}
+
+@media screen and (min-width: 1024px) {
+	.MobilePay_Main__Item:not(:last-child) {
+			margin-bottom: 32px;
+	}
+}
+@media screen and (max-width: 1023px) {
+	.MobilePay_Main__Item:not(:last-child) {
+			margin-bottom: 24px;
+	}
+}
+.title--h2, h2:not([class]) {
+	margin-top: 0;
+	margin-bottom: 16px;
+	font-weight: 500;
+	letter-spacing: -.2px;
+}
+@media screen and (min-width: 1367px) {
+	.title--h2, h2:not([class]) {
+    font-size: 32px;
+    line-height: 42px;
+	}
+}
+@media screen and (max-width: 1366px) {
+	.title--h2, h2:not([class]) {
+			font-size: 28px;
+			line-height: 34px;
+			margin-top: 35px;
+	}
+}
+@media screen and (min-width: 1367px) {
+	.MobilePay_Main__PhoneWrapper {
+			top: -187px;
+	}
+}
+.MobilePay_Main__PhoneWrapper {
+	position: relative;
+}
+@media screen and (max-width: 1366px) and (min-width: 1024px) {
+	.MobilePay_Main__PhoneWrapper {
+			top: -148px;
+	}
+}
+@media screen and (max-width: 1023px) and (min-width: 768px) {
+	.MobilePay_Main__PhoneWrapper {
+			top: 12px;
+	}
+}
+.MobilePay_Main__Phone {
+	position: absolute;
+	left: 50%;
+	pointer-events: none;
+	-webkit-transform: translateX(-50%);
+	transform: translateX(-50%);
+}
+@media screen and (min-width: 1367px) {
+	.MobilePay_Main__Phone {
+			width: 304px;
+	}
+}
+@media screen and (max-width: 1366px) and (min-width: 1024px) {
+	.MobilePay_Main__Phone {
+			width: 255px;
+	}
+}
+@media screen and (max-width: 1023px) and (min-width: 768px) {
+	.MobilePay_Main__Phone {
+			width: 188px;
+	}
+}
+.MobilePay_Main__Phone>img {
+	display: block;
+	max-width: 100%;
+}
+.MobilePay_Main__Phone:after {
+	position: absolute;
+	z-index: -1;
+	top: 0;
+	bottom: 1px;
+	box-shadow: 5px 8px 20px 0 rgba(0,0,0,.5);
+	content: "";
+}
+@media screen and (min-width: 1367px) {
+	.MobilePay_Main__Phone:after {
+			right: 2px;
+			left: 2px;
+			border-radius: 50px;
+	}
+}
+@media screen and (max-width: 1366px) and (min-width: 768px) {
+	.MobilePay_Main__Phone:after {
+    right: 1px;
+    left: 1px;
+	}
+}
+@media screen and (max-width: 1366px) and (min-width: 1024px) {
+	.MobilePay_Main__Phone:after {
+			border-radius: 40px;
+	}
+}
+@media screen and (max-width: 1023px) and (min-width: 768px) {
+	.MobilePay_Main__Phone:after {
+			border-radius: 30px;
+	}
+}
+.MobilePay_views_ApplePay__PhoneWrapper:after {
+	background-color: #ced4d9;
+}
+.MobilePay_Main__PhoneWrapper:after {
+	position: absolute;
+	z-index: -1;
+	right: 0;
+	left: 0;
+	padding-top: 100%;
+	border-radius: 50%;
+	content: "";
+}
+@media screen and (min-width: 1367px) {
+	.MobilePay_Main__PhoneWrapper:after {
+			top: 27px;
+	}
+}
+@media screen and (max-width: 1366px) and (min-width: 1024px) {
+	.MobilePay_Main__PhoneWrapper:after {
+			top: 22px;
+	}
+}
+@media screen and (max-width: 1023px) and (min-width: 768px) {
+	.MobilePay_Main__PhoneWrapper:after {
+			top: 15px;
+	}
+}
+
+@media screen and (min-width: 1367px) {
+	.MobilePay_SupportWrapper__Title {
+			margin-bottom: 40px;
+	}
+}
+@media screen and (max-width: 1366px) and (min-width: 768px) {
+	.MobilePay_SupportWrapper__Title {
+			margin-bottom: 32px;
+	}
+}
+@media screen and (max-width: 767px) {
+	.MobilePay_SupportWrapper__Title {
+			margin-bottom: 24px;
+	}
+}
+.MobilePay_views_ApplePay__Title {
+	font-weight: 500;
+}
+@media screen and (min-width: 768px) {
+	.MobilePay_views_ApplePay__Title {
+			margin-bottom: 16px;
+	}
+}
+@media screen and (max-width: 767px) {
+	.MobilePay_views_ApplePay__Title {
+			margin-bottom: 8px;
+	}
+}
+@media screen and (max-width: 1023px) {
+	.MobilePay_views_ApplePay__Item:not(:last-child) {
+			margin-bottom: 24px;
+	}
+}
+
+@media screen and (min-width: 1367px) {
+	.MobilePay_SupportWrapper__Wrapper {
+			margin-bottom: 104px;
+	}
+}
+@media screen and (max-width: 1366px) and (min-width: 768px) {
+	.MobilePay_SupportWrapper__Wrapper {
+			margin-bottom: 96px;
+	}
+}
+@media screen and (max-width: 767px) {
+	.MobilePay_SupportWrapper__Wrapper {
+			margin-bottom: 64px;
+	}
+}
+
+.PaymentSolutions_Industry__Item {
+	display: flex;
+}
+@media screen and (min-width: 1367px) {
+	.PaymentSolutions_Industry__Item {
+			padding-right: 96px;
+			margin-bottom: 32px;
+	}
+}
+@media screen and (max-width: 1366px) {
+	.PaymentSolutions_Industry__Item {
+			margin-bottom: 24px;
+	}
+}
+.PaymentSolutions_Industry__Icon {
+	flex-shrink: 0;
+}
+@media screen and (min-width: 768px) {
+	.PaymentSolutions_Industry__Icon {
+			margin-right: 20px;
+	}
+}
+@media screen and (max-width: 767px) {
+	.PaymentSolutions_Industry__Icon {
+			margin-right: 16px;
+	}
+}
+h1:first-child, h2:first-child, h3:first-child, h4:first-child, h5:first-child, p:first-child {
+	margin-top: 25px;
+}
+.title--h3, h3:not([class]) {
+	margin-top: 0;
+	margin-bottom: 8px;
+	font-size: 18px;
+	font-weight: 500;
+	letter-spacing: -.2px;
+	line-height: 24px;
+}
+@media screen and (min-width: 1367px) {
+	.title--h3, h3:not([class]) {
+			font-size: 20px;
+			line-height: 30px;
+	}
+}
+.Pay_Methods__Link {
+	margin-top: 16px;
+}
+.link-arrow {
+	position: relative;
+	display: inline;
+	color: #695cff;
+	cursor: pointer;
+	font-weight: 400;
+	outline: none;
+	text-decoration: none;
+	transition: color 0.3s;
+}
+.link-arrow--right {
+	padding-right: 20px;
+}
+.link-arrow:visited {
+	color: #8232ec;
+}
+.link-arrow:before {
+	position: absolute;
+	top: 50%;
+	width: 6px;
+	height: 6px;
+	border-width: 2px 2px 0 0;
+	border-style: solid;
+	content: "";
+	transition: border-color 0.3s,-webkit-transform 0.3s;
+	transition: transform 0.3s,border-color 0.3s;
+	transition: transform 0.3s,border-color 0.3s,-webkit-transform 0.3s;
+}
+.link-arrow--right:before {
+	right: 0;
+	-webkit-transform: translateY(-50%) translateY(1px) rotate(45deg);
+	transform: translateY(-50%) translateY(1px) rotate(45deg);
+}
